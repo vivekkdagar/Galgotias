@@ -4,11 +4,9 @@ set bit '1' should be indexed starting with 0 from LSB side in binary
 representation of the number. Index is starting from 0. You just need to 
 return true or false.*/
 
-class Solution
-{
+class Solution {
 public:
-    static bool solve(int N, int K)
-    {
+    static bool solve(int N, int K) {
         // Shift 1 to the left by K positions to create a mask
         // If the K-th bit in N is set, the result of AND operation will be non-zero
         return (N & (1 << K)) not_eq 0;

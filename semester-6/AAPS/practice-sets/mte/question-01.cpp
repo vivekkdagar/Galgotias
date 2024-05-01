@@ -2,14 +2,11 @@
 
 #include <cstdio>
 
-class Solution
-{
+class Solution {
 public:
-    static void solve(int n)
-    {
-        if(n > 0)
-        {
-            solve(n-1);
+    static void solve(int n) {
+        if (n > 0) {
+            solve(n - 1);
             printf("%d ", n);
         }
     }
